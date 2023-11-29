@@ -1,0 +1,41 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .info-bite-light > p:nth-child(1) {
+    @apply text-almost-white cursor-pointer text-xl leading-6 font-extrabold hover:text-somewhat-yellow pb-2 pt-8;
+  }
+
+  .info-bite-light > p:nth-child(2) {
+    @apply border-b border-gunmetal text-silver text-[0.9375rem] leading-[1.625rem] pb-7;
+  }
+
+  .info-bite-dark {
+    @apply flex justify-between items-center gap-6;
+  }
+
+  .info-bite-dark > img {
+    @apply w-[6.25rem] h-[8.0625rem];
+  }
+
+  .info-bite-dark > div > p:nth-child(1) {
+    @apply text-silver text-[2rem] font-bold leading-8 pb-3;
+  }
+
+  .info-bite-dark > div > p:nth-child(2) {
+    @apply text-dark-space-blue text-[1.125rem] font-extrabold leading-6 pb-2 cursor-pointer hover:text-somewhat-yellow;
+  }
+
+  .info-bite-dark > div > p:nth-child(3) {
+    @apply text-gunmetal text-[0.9375rem] leading-[1.625rem];
+  }
+
+  .menu {
+    @apply hidden md:flex md:justify-between md:items-center md:gap-10;
+  }
+
+  .menu a {
+    @apply text-gunmetal hover:text-light-vermillion text-[0.9375rem] leading-[1.625rem];
+  }
+}
